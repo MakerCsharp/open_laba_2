@@ -6,6 +6,9 @@
         xmlns:local="clr-namespace:LABA_KYROPATKINA_2"
         mc:Ignorable="d"
         Title="MainWindow" Height="500" Width="1000">
+    <Window.Resources>
+       
+    </Window.Resources>
     <Grid >
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="198*"/>
@@ -26,7 +29,7 @@
 
         </Grid>
 
-        <Grid Grid.Row="1" Grid.Column="0" Background="Blue" Margin="0,0,0.4,0">
+        <Grid Grid.Row="1" Grid.Column="0" Background="#025FAF" Margin="0,0,0.4,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="35*"/>
                 <RowDefinition Height="27*"/>
@@ -42,7 +45,7 @@
 
 
                 <!-- 1 bt-->
-                <Button Grid.Row="0" Background="Blue">
+                <Button Grid.Row="0" Background="#025FAF">
                     <Button.Content>
                         <Grid>
                             <Grid.ColumnDefinitions>
@@ -53,12 +56,12 @@
                             </Grid.ColumnDefinitions>
 
                             <!-- Разметка кнопки CLIENTS -->
-                                <TextBlock Text="CLIENTS" Foreground="White" Grid.Column="2"/>
-                          
+                            <TextBlock Text="CLIENTS" Foreground="White" Grid.Column="2"/>
 
-                          
-                                <Image Grid.Column="0"/>
-                            
+
+
+                            <Image Grid.Column="0"/>
+
 
                         </Grid>
                     </Button.Content>
@@ -67,7 +70,7 @@
 
 
                 <!-- 2 bt -->
-                <Button Grid.Row="1"  Background="Blue">
+                <Button Grid.Row="1"  Background="#025FAF">
                     <Button.Content>
                         <Grid>
                             <Grid.ColumnDefinitions>
@@ -85,7 +88,7 @@
 
 
                 <!-- 3 bt -->
-                <Button  Grid.Row="2" Background="Blue">
+                <Button  Grid.Row="2" Background="#025FAF">
                     <Button.Content>
                         <Grid>
                             <Grid.ColumnDefinitions>
@@ -95,9 +98,9 @@
                             </Grid.ColumnDefinitions>
                             <!-- Разметка кнопки REPORTING-->
                             <TextBlock  Text="  REPORTING" Foreground="White" Grid.Column="2" VerticalAlignment="Center"/>
-                            
+
                             <Image Source="photo_2020-09-24_13-34-22.jpg" Height="20" Grid.Column="0"/>
-                            
+
 
                         </Grid>
                     </Button.Content>
@@ -106,7 +109,7 @@
 
 
                 <!-- 4 bt-->
-                <Button   Grid.Row="3" Background="Blue" >
+                <Button   Grid.Row="3" Background="#025FAF" >
                     <Button.Content>
                         <Grid>
                             <Grid.ColumnDefinitions>
@@ -127,7 +130,7 @@
 
 
                 <!--5bt-->
-                <Button Grid.Row="4" Background="Blue">
+                <Button Grid.Row="4" Background="#025FAF">
                     <Button.Content>
                         <Grid>
                             <Grid.ColumnDefinitions>
@@ -158,7 +161,7 @@
                     <RowDefinition Height="38*"/>
                 </Grid.RowDefinitions>
                 <!-- bt 1 BUTTON HELP-->
-                <Button Grid.Row="1">
+                <Button Grid.Row="1" Background="#FF2323F1">
                     <Button.Content>
                         <Grid>
                             <Grid.ColumnDefinitions>
@@ -195,20 +198,15 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
+
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" />
+                
+
             </Grid>
 
         </Grid>
 
-        <GridSplitter Grid.Column="1" HorizontalAlignment="Left" Height="122"  VerticalAlignment="Top" Width="1" Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5" Margin="65,-10,0,0" >
-            <GridSplitter.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </GridSplitter.RenderTransform>
-        </GridSplitter>
+
 
 
     </Grid>
