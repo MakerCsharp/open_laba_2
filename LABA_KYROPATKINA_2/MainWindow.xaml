@@ -22,10 +22,24 @@
         <Frame Grid.Row="1"  Height="416" VerticalAlignment="Top" Grid.Column="1" HorizontalAlignment="Right" Width="746"/>
 
         <Grid Grid.Row="0" Grid.Column="0">
-            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-                <TextBlock>Лого</TextBlock>
-            </StackPanel>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
 
+            <Grid Grid.Column="0">
+                <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="#7DAAC7" FontSize="20">
+                    VIRTUAL
+                </TextBlock>
+            </Grid>
+
+            <Grid Grid.Column="1">
+                <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#C5D8E7" FontSize="20">
+                    HEALTH
+                </TextBlock>
+            </Grid>
+            
+            
 
         </Grid>
 
@@ -161,7 +175,7 @@
                     <RowDefinition Height="38*"/>
                 </Grid.RowDefinitions>
                 <!-- bt 1 BUTTON HELP-->
-                <Button Grid.Row="1" Background="#FF2323F1">
+                <Button Grid.Row="1" Background="#FF135BDA">
                     <Button.Content>
                         <Grid>
                             <Grid.ColumnDefinitions>
@@ -171,7 +185,7 @@
 
                             <Image Grid.Column="0" Source="1.jpg"/>
                             <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-                                <TextBlock Text="123"/>
+                                <TextBlock Text=" Need Help ?"/>
                             </StackPanel>
                         </Grid>
                     </Button.Content>
@@ -199,9 +213,17 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" />
-                
+                <TextBlock Text="ADMIN" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="14" FontWeight="Black" Grid.Column="0"/>
 
+                <TextBlock Text="RECORDS" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Grid.Column="1" FontWeight="Black" />
+
+                <TextBlock Text="INTERACT" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Grid.Column="2" FontWeight="Black" />
+
+                <TextBlock Text="CALENDAR" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Grid.Column="3" FontWeight="Black" />
+
+                <TextBlock Text="PROVIDERS" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Grid.Column="4" FontWeight="Black" />
+
+                <TextBlock Text="SETTINGS" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14"  Grid.Column="5" FontWeight="Black" />
             </Grid>
 
         </Grid>
