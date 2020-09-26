@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="500" Width="1000">
     <Window.Resources>
-       
+
     </Window.Resources>
-    <Grid >
+    <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="198*"/>
             <ColumnDefinition Width="595*"/>
@@ -38,8 +38,8 @@
                     HEALTH
                 </TextBlock>
             </Grid>
-            
-            
+
+
 
         </Grid>
 
@@ -195,19 +195,17 @@
 
         </Grid>
 
-        <Grid Grid.Row="0" Grid.Column="1" >
 
+        <Grid Grid.Row="0" Grid.Column="1">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="297*"/>
-                <ColumnDefinition Width="76*"/>
+                <ColumnDefinition Width="593*"/>
+                <ColumnDefinition Width="151*"/>
             </Grid.ColumnDefinitions>
-
-            <Grid Grid.Column="0" >
+            <Grid Grid.Column="0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                     <ColumnDefinition/>
-
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                     <ColumnDefinition/>
@@ -225,8 +223,9 @@
 
                 <TextBlock Text="SETTINGS" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14"  Grid.Column="5" FontWeight="Black" />
             </Grid>
-
         </Grid>
+
+   
 
 
 
