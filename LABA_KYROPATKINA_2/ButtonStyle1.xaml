@@ -44,11 +44,12 @@
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsDefaulted" Value="true">
                             <Setter Property="Fill" TargetName="rectangle" Value="#FF2A68B4"/>
+                            <Setter Property="Source" TargetName="image" Value="image blue/heart_with_pulse_64px.png"/>
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="true">
                             <Setter Property="Fill" TargetName="rectangle" Value="#FF3285CB"/>
-                            <Setter Property="Source" TargetName="image" Value="C:\Проекты с githuba\LABA_KYROPATKINA_2\image white\3_heart_with_pulse_64px.png"/>
                             <Setter Property="Stroke" TargetName="rectangle" Value="#FF0A4670"/>
+                            <Setter Property="Source" TargetName="image" Value="image white/3_heart_with_pulse_64px.png"/>
                         </Trigger>
                         <Trigger Property="IsPressed" Value="true"/>
                         <Trigger Property="IsEnabled" Value="false"/>
@@ -116,7 +117,7 @@
                         </Grid.ColumnDefinitions>
                         <Rectangle x:Name="rectangle" Fill="#FF005FAF" HorizontalAlignment="Left" Height="46.62" Stroke="#FF0A4670" VerticalAlignment="Top" Width="246.887" Grid.ColumnSpan="3" Margin="0"/>
                         <TextBlock Grid.Column="2" HorizontalAlignment="Left" Height="20.22" Margin="0,16,0,0" TextWrapping="Wrap" Text="CLIENTS" VerticalAlignment="Top" Width="192.912" FontFamily="Trebuchet MS" Foreground="White"/>
-                        <Image x:Name="image" HorizontalAlignment="Left" Height="26.62" Margin="15.166,10,0,0" VerticalAlignment="Top" Width="24.816" Source="C:\Проекты с githuba\LABA_KYROPATKINA_2\image blue\customer_64px.png"/>
+                        <Image x:Name="image" HorizontalAlignment="Left" Height="26.62" Margin="10,10,0,0" VerticalAlignment="Top" Width="29.982" Source="image blue/customer_64px.png"/>
                     </Grid>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsDefaulted" Value="true">
@@ -125,7 +126,7 @@
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="true">
                             <Setter Property="Fill" TargetName="rectangle" Value="#FF3285CB"/>
-                            <Setter Property="Source" TargetName="image" Value="C:\Проекты с githuba\LABA_KYROPATKINA_2\image white\1_customer_64px.png"/>
+                            <Setter Property="Source" TargetName="image" Value="image white/1_customer_64px.png"/>
                         </Trigger>
                         <Trigger Property="IsPressed" Value="true"/>
                         <Trigger Property="IsEnabled" Value="false"/>
@@ -245,5 +246,195 @@
             </Setter.Value>
         </Setter>
     </Style>
+    <Style x:Key="ButtonStyle_admin_1" TargetType="{x:Type Button}">
+        <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+        <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Padding" Value="1"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid HorizontalAlignment="Left" Height="20" Width="75">
+                        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="10,0,0,0" TextWrapping="Wrap" Text="ADMIN" Height="20" Width="55" FontFamily="Trebuchet MS" VerticalAlignment="Top" FontWeight="Bold"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsDefaulted" Value="true"/>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter Property="Foreground" TargetName="textBlock" Value="#FF1922E6"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="true"/>
+                        <Trigger Property="IsEnabled" Value="false"/>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="ButtonStyle_RECORDS_2" TargetType="{x:Type Button}">
+        <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+        <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Padding" Value="1"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid HorizontalAlignment="Left" Height="20" Width="75">
+                        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="10,0,0,0" TextWrapping="Wrap" Text="RECORDS" Height="20" Width="55" FontFamily="Trebuchet MS" VerticalAlignment="Top" FontWeight="Bold"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsDefaulted" Value="true"/>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter Property="Foreground" TargetName="textBlock" Value="#FF1922E6"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="true"/>
+                        <Trigger Property="IsEnabled" Value="false"/>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="ButtonStyle_INTERECT_3" TargetType="{x:Type Button}">
+        <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+        <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Padding" Value="1"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid HorizontalAlignment="Left" Height="20" Width="75">
+                        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="10,0,0,0" TextWrapping="Wrap" Text="INTERACT" VerticalAlignment="Top" Width="65" Height="20" FontFamily="Trebuchet MS" FontWeight="Bold"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsDefaulted" Value="true"/>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter Property="Foreground" TargetName="textBlock" Value="#FF1922E6"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="true"/>
+                        <Trigger Property="IsEnabled" Value="false"/>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="ButtonStyle_CALENDAR_4" TargetType="{x:Type Button}">
+        <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+        <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Padding" Value="1"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid HorizontalAlignment="Left" Height="20" Width="75">
+                        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" TextWrapping="Wrap" Text="CALENDAR" VerticalAlignment="Top" Margin="10,0,5,0" Height="20" Width="60" FontFamily="Trebuchet MS" FontWeight="Bold"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsDefaulted" Value="true"/>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter Property="Foreground" TargetName="textBlock" Value="#FF1922E6"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="true"/>
+                        <Trigger Property="IsEnabled" Value="false"/>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="ButtonStyle_PROVIDERS_5" TargetType="{x:Type Button}">
+        <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+        <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Padding" Value="1"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid HorizontalAlignment="Left" Height="20" Width="75">
+                        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" TextWrapping="Wrap" Text="PROVIDERS" VerticalAlignment="Top" Margin="4.5,0,5,0" Width="65.5" Height="20" FontFamily="Trebuchet MS" FontWeight="Bold"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsDefaulted" Value="true"/>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter Property="Foreground" TargetName="textBlock" Value="#FF1922E6"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="true"/>
+                        <Trigger Property="IsEnabled" Value="false"/>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="ButtonStyle_SETTINGS_6" TargetType="{x:Type Button}">
+        <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+        <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Padding" Value="1"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid HorizontalAlignment="Left" Height="20" Width="75">
+                        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" TextWrapping="Wrap" Text="SETTINGS" VerticalAlignment="Top" Margin="10,0,0,0" Height="20" Width="55" FontFamily="Trebuchet MS" FontWeight="Bold"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsDefaulted" Value="true"/>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter Property="Foreground" TargetName="textBlock" Value="#FF1922E6"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="true"/>
+                        <Trigger Property="IsEnabled" Value="false"/>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="ButtonStyle_up_down" TargetType="{x:Type Button}">
+        <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+        <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Padding" Value="1"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="22.009">
+                        <Image x:Name="image" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="22.009" Source="other image/expand_arrow_64px.png"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsDefaulted" Value="true"/>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter Property="Source" TargetName="image" Value="other image/expand_arrow_blue_64px.png"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="true"/>
+                        <Trigger Property="IsEnabled" Value="false"/>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
 
 </ResourceDictionary>

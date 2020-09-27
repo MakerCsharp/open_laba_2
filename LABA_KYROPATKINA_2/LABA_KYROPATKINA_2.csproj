@@ -106,7 +106,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="other image\" />
+    <Resource Include="other image\expand_arrow_blue_64px.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="image blue\customer_64px.png" />
@@ -124,6 +124,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="image white\compass_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="other image\expand_arrow_64px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

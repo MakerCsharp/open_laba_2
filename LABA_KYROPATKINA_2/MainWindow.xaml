@@ -8,6 +8,18 @@
         Title="MainWindow" Height="500" Width="1000">
     <Window.Resources>
 
+
+        <Style x:Key="ButtonStyle6_up_1" TargetType="{x:Type Button}">
+            <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+            <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="1"/>
+        </Style>
+
     </Window.Resources>
     <Window.Triggers>
         <EventTrigger RoutedEvent="FrameworkElement.Loaded"/>
@@ -31,15 +43,16 @@
             </Grid.ColumnDefinitions>
 
             <Grid Grid.Column="0">
-                <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="#7DAAC7" FontSize="20">
+                <TextBlock HorizontalAlignment="Right"  Foreground="#7DAAC7" FontSize="20" Margin="0,10,0,0">
                     VIRTUAL
                 </TextBlock>
             </Grid>
 
             <Grid Grid.Column="1">
-                <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#C5D8E7" FontSize="20">
+                <TextBlock HorizontalAlignment="Left"  Foreground="#C5D8E7" FontSize="20" Margin="0,10,0,0" >
                     HEALTH
                 </TextBlock>
+
             </Grid>
 
 
@@ -150,37 +163,69 @@
                 <ColumnDefinition Width="151*"/>
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="39*"/>
                     <ColumnDefinition Width="90*"/>
                     <ColumnDefinition Width="22*"/>
                 </Grid.ColumnDefinitions>
+                <Rectangle Fill="#FF005FAF" HorizontalAlignment="Center" Height="23"  Stroke="#FF0A4670" VerticalAlignment="Center" Width="23.001" RadiusY="12" RadiusX="12" Grid.Column="0" Margin="8.008,15.3,8.007,15.3"/>
+                <TextBlock Grid.Column="1" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center" Width="70.038" Margin="10,17.086,10,20.553"/>
+                <Button Content="Button" Grid.Column="2" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="22.009" Height="20" Style="{DynamicResource ButtonStyle_up_down}" Margin="0,16.8" />
             </Grid>
 
 
             <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
+                    <ColumnDefinition Width="99*"/>
+                    <ColumnDefinition Width="99*"/>
+                    <ColumnDefinition Width="99*"/>
+                    <ColumnDefinition Width="99*"/>
+                    <ColumnDefinition Width="99*"/>
+                    <ColumnDefinition Width="98*"/>
                 </Grid.ColumnDefinitions>
+                <Button Content="Button" Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="75" Style="{DynamicResource ButtonStyle_admin_1}" />
+                <Button Content="Button" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" Style="{DynamicResource ButtonStyle_RECORDS_2}" />
+                <Button Content="Button" Grid.Column="2" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="75" Style="{DynamicResource ButtonStyle_INTERECT_3}"/>
+                <Button Content="Button" Grid.Column="3" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="75" Style="{DynamicResource ButtonStyle_CALENDAR_4}" />
+                <Button Content="Button" Grid.Column="4" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="75" Style="{DynamicResource ButtonStyle_PROVIDERS_5}" />
+                <Button Content="Button" Grid.Column="5" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="75" Style="{DynamicResource ButtonStyle_SETTINGS_6}" />
 
-                <TextBlock Text="ADMIN" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="14" FontWeight="Black" Grid.Column="0"/>
+                <Separator  Grid.Column="5" RenderTransformOrigin="0.5,0.5"   HorizontalAlignment="Right" Width="29" Height="20" VerticalAlignment="Center" Margin="0,17,-5,17" >
+                    <Separator.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="90"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Separator.RenderTransform>
+                </Separator>
+                <Separator HorizontalAlignment="Left" Grid.Column="0" Width="29" Height="20"  VerticalAlignment="Center"  RenderTransformOrigin="0.5,0.5" Margin="-15,17,0,17">
+                    <Separator.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="90"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Separator.RenderTransform>
+                </Separator>
 
-                <TextBlock Text="RECORDS" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Grid.Column="1" FontWeight="Black" />
 
-                <TextBlock Text="INTERACT" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Grid.Column="2" FontWeight="Black" />
 
-                <TextBlock Text="CALENDAR" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Grid.Column="3" FontWeight="Black" />
 
-                <TextBlock Text="PROVIDERS" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Grid.Column="4" FontWeight="Black" />
 
-                <TextBlock Text="SETTINGS" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14"  Grid.Column="5" FontWeight="Black" />
             </Grid>
         </Grid>
+
+
+
 
 
 
