@@ -24,5 +24,10 @@ namespace LABA_KYROPATKINA_2
         {
             InitializeComponent();
         }
+
+        private void Frame_Loaded(object sender, RoutedEventArgs e)
+        {
+            Frame_1.Content = new Page2();
+        }
     }
 }

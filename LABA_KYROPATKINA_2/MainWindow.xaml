@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LABA_KYROPATKINA_2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="1000">
+        Title="MainWindow" Height="500" Width="1000" WindowStyle="None" >
     <Window.Resources>
 
 
@@ -26,15 +26,15 @@
     </Window.Triggers>
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="198*"/>
-            <ColumnDefinition Width="595*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="3*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="4*"/>
             <RowDefinition Height="31*"/>
         </Grid.RowDefinitions>
 
-        <Frame Grid.Row="1"  Height="416" VerticalAlignment="Top" Grid.Column="1" HorizontalAlignment="Right" Width="746"/>
+        <Frame  x:Name="MainWindow_1"  Grid.Row="1"  Height="436" VerticalAlignment="Top" Grid.Column="1" HorizontalAlignment="Right" Width="744" Loaded="MainWindow_Loaded" Margin="0,0,0,-0.229"   />
 
         <Grid Grid.Row="0" Grid.Column="0">
             <Grid.ColumnDefinitions>
@@ -61,10 +61,10 @@
 
         <Grid Grid.Row="1" Grid.Column="0" Background="#025FAF" >
             <Grid.RowDefinitions>
-                <RowDefinition Height="35*"/>
-                <RowDefinition Height="27*"/>
+                <RowDefinition Height="121*"/>
+                <RowDefinition Height="97*"/>
             </Grid.RowDefinitions>
-            <Grid Grid.Row="0" Margin="0,0,0.4,1.4">
+            <Grid Grid.Row="0" >
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                     <RowDefinition/>
@@ -168,12 +168,12 @@
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="39*"/>
-                    <ColumnDefinition Width="90*"/>
-                    <ColumnDefinition Width="22*"/>
+                    <ColumnDefinition Width="78*"/>
+                    <ColumnDefinition Width="34*"/>
                 </Grid.ColumnDefinitions>
-                <Rectangle Fill="#FF005FAF" HorizontalAlignment="Center" Height="23"  Stroke="#FF0A4670" VerticalAlignment="Center" Width="23.001" RadiusY="12" RadiusX="12" Grid.Column="0" Margin="8.008,15.3,8.007,15.3"/>
-                <TextBlock Grid.Column="1" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center" Width="70.038" Margin="10,17.086,10,20.553"/>
-                <Button Content="Button" Grid.Column="2" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="22.009" Height="20" Style="{DynamicResource ButtonStyle_up_down}" Margin="0,16.8" />
+                <Rectangle Fill="#FF005FAF" HorizontalAlignment="Center" Height="23"  Stroke="#FF0A4670" VerticalAlignment="Center" Width="23.001" RadiusY="12" RadiusX="12" Grid.Column="0" Margin="8.008,16.614,8.007,16.615"/>
+                <TextBlock Grid.Column="1" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center" Width="70.038"  Height="15.96"/>
+                <Button Content="Button" Grid.Column="2" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="22.009" Height="20" Style="{DynamicResource ButtonStyle_up_down}" Margin="10,19.614,2.005,16.615" />
             </Grid>
 
 
@@ -182,21 +182,21 @@
                     <RowDefinition/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="99*"/>
-                    <ColumnDefinition Width="99*"/>
-                    <ColumnDefinition Width="99*"/>
-                    <ColumnDefinition Width="99*"/>
-                    <ColumnDefinition Width="99*"/>
-                    <ColumnDefinition Width="98*"/>
+                    <ColumnDefinition Width="89*"/>
+                    <ColumnDefinition Width="89*"/>
+                    <ColumnDefinition Width="89*"/>
+                    <ColumnDefinition Width="89*"/>
+                    <ColumnDefinition Width="89*"/>
+                    <ColumnDefinition Width="89*"/>
                 </Grid.ColumnDefinitions>
                 <Button Content="Button" Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="75" Style="{DynamicResource ButtonStyle_admin_1}" />
                 <Button Content="Button" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" Style="{DynamicResource ButtonStyle_RECORDS_2}" />
-                <Button Content="Button" Grid.Column="2" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="75" Style="{DynamicResource ButtonStyle_INTERECT_3}"/>
+                <Button Content="Button" Grid.Column="2" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="75" Style="{DynamicResource ButtonStyle_INTERECT_3}" />
                 <Button Content="Button" Grid.Column="3" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="75" Style="{DynamicResource ButtonStyle_CALENDAR_4}" />
                 <Button Content="Button" Grid.Column="4" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="75" Style="{DynamicResource ButtonStyle_PROVIDERS_5}" />
                 <Button Content="Button" Grid.Column="5" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="75" Style="{DynamicResource ButtonStyle_SETTINGS_6}" />
 
-                <Separator  Grid.Column="5" RenderTransformOrigin="0.5,0.5"   HorizontalAlignment="Right" Width="29" Height="20" VerticalAlignment="Center" Margin="0,17,-5,17" >
+                <Separator  Grid.Column="5" RenderTransformOrigin="0.5,0.5"   HorizontalAlignment="Right" Width="29" Height="20" VerticalAlignment="Center" Margin="0,18.114,-14.333,18.115" >
                     <Separator.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
