@@ -9,6 +9,9 @@
     <Window.Resources>
 
     </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded"/>
+    </Window.Triggers>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="198*"/>
@@ -43,7 +46,7 @@
 
         </Grid>
 
-        <Grid Grid.Row="1" Grid.Column="0" Background="#025FAF" Margin="0,0,0.4,0">
+        <Grid Grid.Row="1" Grid.Column="0" Background="#025FAF" >
             <Grid.RowDefinitions>
                 <RowDefinition Height="35*"/>
                 <RowDefinition Height="27*"/>
@@ -59,7 +62,7 @@
 
 
                 <!-- 1 bt-->
-                <Button Grid.Row="0" Background="#025FAF">
+                <Button Grid.Row="0" Background="#025FAF" Style="{DynamicResource ButtonStyle3}">
                     <Button.Content>
                         <Grid>
                             <Grid.ColumnDefinitions>
@@ -84,67 +87,26 @@
 
 
                 <!-- 2 bt -->
-                <Button Grid.Row="1"  Background="#025FAF">
-                    <Button.Content>
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition/>
-                                <ColumnDefinition/>
-                                <ColumnDefinition/>
-                            </Grid.ColumnDefinitions>
-                            <!-- Разметка кнопки MONITORING -->
-                            <TextBlock  Text="MONITORING" Foreground="White" Grid.Column="2"/>
-                            <Image Grid.Column="0" />
-                        </Grid>
-                    </Button.Content>
-                </Button>
+                <Button x:Name="button1_monitoring" Grid.Row="1"  Style="{DynamicResource ButtonStyle1}"/>
+
+
                 <!--<TextBlock  Text="Monitoring" Foreground="White"/>-->
 
 
                 <!-- 3 bt -->
-                <Button  Grid.Row="2" Background="#025FAF">
-                    <Button.Content>
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition/>
-                                <ColumnDefinition/>
-                                <ColumnDefinition/>
-                            </Grid.ColumnDefinitions>
-                            <!-- Разметка кнопки REPORTING-->
-                            <TextBlock  Text="  REPORTING" Foreground="White" Grid.Column="2" VerticalAlignment="Center"/>
-
-                            <Image Source="photo_2020-09-24_13-34-22.jpg" Height="20" Grid.Column="0"/>
+                <Button  x:Name="Button2_reporting" Grid.Row="2"  Style="{DynamicResource ButtonStyle2}"/>
 
 
-                        </Grid>
-                    </Button.Content>
-                </Button>
 
 
 
                 <!-- 4 bt-->
-                <Button   Grid.Row="3" Background="#025FAF" >
-                    <Button.Content>
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition/>
-                                <ColumnDefinition/>
-                                <ColumnDefinition/>
-
-                            </Grid.ColumnDefinitions>
-
-                            <!-- Разметка кнопки LOCATIONS-->
-                            <TextBlock Grid.Column="2" Text="LOCATIONS" Foreground="White"/>
-                            <Image Grid.Column="0"/>
-                        </Grid>
-
-                    </Button.Content>
-                </Button>
+                <Button Background="#025FAF" Style="{DynamicResource ButtonStyle4}" Grid.Row="3" />
 
 
 
                 <!--5bt-->
-                <Button Grid.Row="4" Background="#025FAF">
+                <Button Grid.Row="4" Background="#025FAF" Style="{DynamicResource ButtonStyle5}">
                     <Button.Content>
                         <Grid>
                             <Grid.ColumnDefinitions>
@@ -175,21 +137,7 @@
                     <RowDefinition Height="38*"/>
                 </Grid.RowDefinitions>
                 <!-- bt 1 BUTTON HELP-->
-                <Button Grid.Row="1" Background="#FF135BDA">
-                    <Button.Content>
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition/>
-                                <ColumnDefinition/>
-                            </Grid.ColumnDefinitions>
-
-                            <Image Grid.Column="0" Source="1.jpg"/>
-                            <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-                                <TextBlock Text=" Need Help ?"/>
-                            </StackPanel>
-                        </Grid>
-                    </Button.Content>
-                </Button>
+                <Button Grid.Row="1" Background="#FF135BDA" Style="{DynamicResource ButtonStyle6_help_button}"/>
 
             </Grid>
 

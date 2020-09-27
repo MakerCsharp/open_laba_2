@@ -24,5 +24,10 @@ namespace LABA_KYROPATKINA_2
         {
             InitializeComponent();
         }
+
+        private void Frame_Navigated(object sender, NavigationEventArgs e)
+        {
+
+        }
     }
 }
