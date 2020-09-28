@@ -36,8 +36,8 @@
                         <RowDefinition/>
                     </Grid.RowDefinitions>
 
-                    <TextBlock Text="First Name" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="0"/>
-                    <TextBox Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Width="150" Height="30"/>
+                    <TextBlock Text="First Name" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="0" Margin="10,0,0,0"/>
+                    <TextBox Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Width="150" Height="30" Margin="10,0,0,0"/>
                 </Grid>
 
                 <!-- Третий элемент-->
@@ -47,8 +47,8 @@
                         <RowDefinition/>
                     </Grid.RowDefinitions>
 
-                    <TextBlock Text="First Name" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="0"/>
-                    <TextBox Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Width="150" Height="30"/>
+                    <TextBlock Text="Start Date" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="0" Margin="12.5,0,0,0"/>
+                    <DatePicker Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"  Width="150"  />
                 </Grid>
 
                 <Grid Grid.Column="4">
@@ -57,8 +57,10 @@
                         <RowDefinition/>
                     </Grid.RowDefinitions>
 
-                    <TextBlock Text="First Name" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="0"/>
-                    <TextBox Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Width="150" Height="30"/>
+                    <TextBlock Text="End date" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="0" Margin="12.5,0,0,0" />
+
+                    <DatePicker Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" />
+
                 </Grid>
 
                 <Grid Grid.Column="1">
@@ -67,8 +69,8 @@
                         <RowDefinition/>
                     </Grid.RowDefinitions>
 
-                    <TextBlock Text="First Name" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="0"/>
-                    <TextBox Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Width="150" Height="30"/>
+                    <TextBlock Text="Last Name" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="0"/>
+                    <TextBox Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Width="150" Height="30"   />
                 </Grid>
 
 
@@ -91,11 +93,11 @@
                     <!-- Data range название-->
                     <Grid Grid.Row="0">
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="33*"/>
-                            <ColumnDefinition Width="142*"/>
+                            <ColumnDefinition Width="39*"/>
+                            <ColumnDefinition Width="136*"/>
                         </Grid.ColumnDefinitions>
 
-                        <TextBlock Text="Data range"/>
+                        <TextBlock Text="Data range " Grid.Row="0"  Margin="10,0,0,0" VerticalAlignment="Center" Height="15.96" Width="61.68"/>
 
 
                     </Grid>
@@ -107,12 +109,11 @@
                             <ColumnDefinition/>
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
-
-                        <Button Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Center"  Content="1 day" />
-                        <Button Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"  Content="7 day"    />
-                        <Button Grid.Column="2" HorizontalAlignment="Center"  VerticalAlignment="Center"  Content="30 days"  />
-                        <Button Grid.Column="3" HorizontalAlignment="Center"  VerticalAlignment="Center"  Content="90 days" />
-                        <Button Grid.Column="4" HorizontalAlignment="Center"  VerticalAlignment="Center"  Content="All"  />
+                        <Button Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"   Width="50" Style="{DynamicResource ButtonStyle_7days}"    />
+                        <Button Grid.Column="2" HorizontalAlignment="Center"  VerticalAlignment="Center"  Content="30 days"  Width="54" Style="{DynamicResource ButtonStyle_30days}" Margin="10,11.5,6,11.5"  />
+                        <Button Grid.Column="3" HorizontalAlignment="Center"  VerticalAlignment="Center"  Content="90 days"  Width="50" Style="{DynamicResource ButtonStyle_90days}" />
+                        <Button Grid.Column="4" HorizontalAlignment="Center"  VerticalAlignment="Center"  Content="All"  Width="50" Style="{DynamicResource ButtonStyle_Alldays}"  />
+                        <Button Content="1 day" HorizontalAlignment="Center"  VerticalAlignment="Center"  Width="50" Style="{DynamicResource ButtonStyle_1day}" />
 
 
 
@@ -132,7 +133,7 @@
                             <ColumnDefinition Width="3*"/>
                             <ColumnDefinition Width="11*"/>
                         </Grid.ColumnDefinitions>
-                        <TextBlock Text="Source" HorizontalAlignment="Left" VerticalAlignment="Bottom" />
+                        <TextBlock Text="Source" HorizontalAlignment="Left" VerticalAlignment="Center" />
                     </Grid>
 
                     <Grid Grid.Row="1">
@@ -143,12 +144,21 @@
 
                         <Grid Grid.Column="0">
 
-                            <ComboBox x:Name="Combobox_1_page_2" Text="Select Source"/>
+                            <ComboBox x:Name="Combobox_1_page_2" Text="Select Source" Margin="0,0,0,10"/>
 
                         </Grid>
-                        
-                        
-                        
+
+                        <Grid Grid.Column="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Button Height="20" Width="61.95" HorizontalAlignment="Center" VerticalAlignment="Top"  Grid.Column="0" Style="{DynamicResource ButtonStyle_search}" />
+                            <Button Height="20" Width="22.4" HorizontalAlignment="Center" VerticalAlignment="Top"  Grid.Column="1"  Style="{DynamicResource Button_exit}"/>
+                        </Grid>
+
+
+
                     </Grid>
 
 
@@ -160,11 +170,15 @@
         </Grid>
 
         <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="27*"/>
+                <ColumnDefinition Width="673*"/>
+            </Grid.ColumnDefinitions>
 
-            <DataGrid Margin="10">
-                
+            <DataGrid Margin="10" Grid.ColumnSpan="2">
+
             </DataGrid>
         </Grid>
-        
+
     </Grid>
 </Page>

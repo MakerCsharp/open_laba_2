@@ -33,36 +33,45 @@
 
         <Storyboard x:Key="MouseMove_1">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="separator">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="105"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="65.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
-        <Storyboard x:Key="Storyboard1"/>
-        <Storyboard x:Key="To_task">
+        <Storyboard x:Key="Mouse_Tasks">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="separator">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="99.383"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="64.032"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
-        <Storyboard x:Key="Mouse_To_Risk">
+        <Storyboard x:Key="Mouse_Risk">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="separator">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="184.759"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="134.734"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
-        <Storyboard x:Key="Mouse_Authorization">
+        <Storyboard x:Key="Mouse_authorization">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="separator">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="314"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="206.77"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
-        <Storyboard x:Key="Mouse_Vitals">
+        <Storyboard x:Key="Moouse_Vitals">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="separator">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="379.523"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="304.819"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
-        <Storyboard x:Key="Mouse_Allerts">
+        <Storyboard x:Key="Mouse_Alerts">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="separator">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-2.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="4.669"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -90,30 +99,27 @@
     </Page.Resources>
     <Page.Triggers>
         <EventTrigger RoutedEvent="FrameworkElement.Loaded">
-            <BeginStoryboard x:Name="MouseMove_1_BeginStoryboard" Storyboard="{StaticResource MouseMove_1}"/>
-            <BeginStoryboard x:Name="Mouse_To_Risk_BeginStoryboard" Storyboard="{StaticResource Mouse_To_Risk}"/>
-            <BeginStoryboard x:Name="To_task_BeginStoryboard" Storyboard="{StaticResource To_task}"/>
-            <BeginStoryboard x:Name="Mouse_Authorization_BeginStoryboard" Storyboard="{StaticResource Mouse_Authorization}"/>
-            <BeginStoryboard x:Name="Mouse_Vitals_BeginStoryboard" Storyboard="{StaticResource Mouse_Vitals}"/>
-            <BeginStoryboard x:Name="Mouse_Allerts_BeginStoryboard" Storyboard="{StaticResource Mouse_Allerts}"/>
+            <BeginStoryboard Storyboard="{StaticResource MouseMove_1}"/>
+            <BeginStoryboard x:Name="Mouse_Alerts_BeginStoryboard" Storyboard="{StaticResource Mouse_Alerts}"/>
+            <BeginStoryboard x:Name="Mouse_Tasks_BeginStoryboard" Storyboard="{StaticResource Mouse_Tasks}"/>
+            <BeginStoryboard x:Name="Mouse_Risk_BeginStoryboard" Storyboard="{StaticResource Mouse_Risk}"/>
+            <BeginStoryboard x:Name="Mouse_authorization_BeginStoryboard" Storyboard="{StaticResource Mouse_authorization}"/>
+            <BeginStoryboard x:Name="Moouse_Vitals_BeginStoryboard" Storyboard="{StaticResource Moouse_Vitals}"/>
         </EventTrigger>
         <EventTrigger RoutedEvent="UIElement.MouseEnter" SourceName="Tasks">
-            <BeginStoryboard x:Name="To_task_BeginStoryboard1" Storyboard="{StaticResource To_task}"/>
+            <BeginStoryboard x:Name="Mouse_Tasks_BeginStoryboard1" Storyboard="{StaticResource Mouse_Tasks}"/>
         </EventTrigger>
-        <EventTrigger RoutedEvent="UIElement.MouseEnter" SourceName="Allerts">
-            <BeginStoryboard x:Name="Mouse_Allerts_BeginStoryboard1" Storyboard="{StaticResource Mouse_Allerts}"/>
+        <EventTrigger RoutedEvent="UIElement.MouseEnter" SourceName="Risk">
+            <BeginStoryboard x:Name="Mouse_Risk_BeginStoryboard1" Storyboard="{StaticResource Mouse_Risk}"/>
         </EventTrigger>
         <EventTrigger RoutedEvent="UIElement.MouseEnter" SourceName="Autrozitio">
-            <BeginStoryboard x:Name="Mouse_Authorization_BeginStoryboard1" Storyboard="{StaticResource Mouse_Authorization}"/>
+            <BeginStoryboard x:Name="Mouse_authorization_BeginStoryboard1" Storyboard="{StaticResource Mouse_authorization}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseEnter" SourceName="Allerts">
+            <BeginStoryboard x:Name="Mouse_Alerts_BeginStoryboard1" Storyboard="{StaticResource Mouse_Alerts}"/>
         </EventTrigger>
         <EventTrigger RoutedEvent="UIElement.MouseEnter" SourceName="Vitals">
-            <BeginStoryboard x:Name="Mouse_To_Risk_BeginStoryboard1" Storyboard="{StaticResource Mouse_Vitals}"/>
-        </EventTrigger>
-        <EventTrigger RoutedEvent="UIElement.MouseEnter" SourceName="Risk">
-            <BeginStoryboard x:Name="Mouse_To_Risk_BeginStoryboard3" Storyboard="{StaticResource Mouse_To_Risk}"/>
-        </EventTrigger>
-        <EventTrigger RoutedEvent="UIElement.MouseEnter" SourceName="Risk">
-            <BeginStoryboard x:Name="Mouse_To_Risk_BeginStoryboard2" Storyboard="{StaticResource Mouse_To_Risk}"/>
+            <BeginStoryboard x:Name="Moouse_Vitals_BeginStoryboard1" Storyboard="{StaticResource Moouse_Vitals}"/>
         </EventTrigger>
     </Page.Triggers>
 
@@ -133,21 +139,21 @@
             <Grid Grid.Column="0">
                 <Grid.ColumnDefinitions>
 
-                    <ColumnDefinition Width="120*"/>
-                    <ColumnDefinition Width="120*"/>
-                    <ColumnDefinition Width="89*"/>
+                    <ColumnDefinition Width="70.4"/>
+                    <ColumnDefinition Width="71.2"/>
+                    <ColumnDefinition/>
 
-                    <ColumnDefinition Width="112*"/>
-                    <ColumnDefinition Width="159*"/>
+                    <ColumnDefinition Width="110.4"/>
+                    <ColumnDefinition Width="248.8"/>
 
                 </Grid.ColumnDefinitions>
 
-                <Button Content="Allerts" x:Name="Allerts" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Width="70" Style="{DynamicResource ButtonStyle_Page_2_Alerts}" Height="20" Margin="25,19" />
-                <Button Content="Tasks" x:Name="Tasks" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Width="70" Style="{DynamicResource ButtonStyle_Page_1_Tasks}" Height="20" Margin="20.667,18.98,0,19.02" />
-                <Button Content="Risk" x:Name="Risk" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center" Width="70" Style="{DynamicResource ButtonStyle_Page_1_Risk}" Height="20" Margin="0,19" />
-                <Button Content="Vitals"  x:Name="Vitals" Grid.Column="4" HorizontalAlignment="Left" VerticalAlignment="Center" Width="70" Style="{DynamicResource ButtonStyle_Page_1_Vitals}" Height="20" Margin="0,19" />
-                <Separator Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="1" Margin="0,48,-198.667,0" VerticalAlignment="Top" Width="798.667"/>
-                <Separator x:Name="separator" HorizontalAlignment="Left" Height="4.5" Margin="23.324,46.171,0,0" Style="{DynamicResource SimpleSeparator}" VerticalAlignment="Top" Width="42" Background="#FF234A8F" Foreground="#FF234A8F" RenderTransformOrigin="0.5,0.5">
+                <Button Content="Allerts" x:Name="Allerts" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50" Style="{DynamicResource ButtonStyle_Page_2_Alerts}" Height="20" Margin="10,18,10.4,18"   />
+                <Button Content="Tasks" x:Name="Tasks" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="52" Style="{DynamicResource ButtonStyle_Page_1_Tasks}" Height="20" Margin="9.6,18"   />
+                <Button Content="Risk" x:Name="Risk" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="24" Style="{DynamicResource ButtonStyle_Page_1_Risk}" Height="20" Margin="10.4,18"   />
+                <Button Content="Vitals"  x:Name="Vitals" Grid.Column="4" HorizontalAlignment="Left" VerticalAlignment="Center" Width="70" Style="{DynamicResource ButtonStyle_Page_1_Vitals}" Height="20" Margin="10.2,18,0,18"  />
+                <Separator Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="1" Margin="0,48,-253.4,0" VerticalAlignment="Top" Width="745"/>
+                <Separator x:Name="separator" HorizontalAlignment="Left" Height="5" Margin="7,46,0,0" Style="{DynamicResource SimpleSeparator}" VerticalAlignment="Top" Width="42" Background="#FF234A8F" Foreground="#FF234A8F" RenderTransformOrigin="0.5,0.5">
                     <Separator.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -157,7 +163,7 @@
                         </TransformGroup>
                     </Separator.RenderTransform>
                 </Separator>
-                <Button x:Name="Autrozitio" Content="Button" Grid.Column="3" HorizontalAlignment="Left"  VerticalAlignment="Center" Width="100"  Style="{DynamicResource ButtonStyle_Page_1_Authorization}" Height="20" />
+                <Button x:Name="Autrozitio" Content="Button" Grid.Column="3" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="91"  Style="{DynamicResource ButtonStyle_Page_1_Authorization}" Height="20" Margin="9.6,18,9.8,18" />
 
 
             </Grid>
