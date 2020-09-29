@@ -171,9 +171,12 @@
                     <ColumnDefinition Width="78*"/>
                     <ColumnDefinition Width="34*"/>
                 </Grid.ColumnDefinitions>
-                <Rectangle Fill="#FF005FAF" HorizontalAlignment="Center" Height="23"  Stroke="#FF0A4670" VerticalAlignment="Center" Width="23.001" RadiusY="12" RadiusX="12" Grid.Column="0" Margin="8.008,16.614,8.007,16.615"/>
-                <TextBlock Grid.Column="1" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center" Width="70.038"  Height="15.96"/>
-                <Button Content="Button" Grid.Column="2" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="22.009" Height="20" Style="{DynamicResource ButtonStyle_up_down}" Margin="10,19.614,2.005,16.615" />
+                <Rectangle Fill="#FF005FAF" HorizontalAlignment="Center" Height="23"  Stroke="#FF0A4670" VerticalAlignment="Center" Width="23.001" RadiusY="12" RadiusX="12" Grid.Column="0" Margin="6.062,16.706,10,16.705" />
+                <TextBlock Grid.Column="1" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="User" VerticalAlignment="Center" Width="70.038"  Height="15.96"/>
+                <Button Content="Button" Grid.Column="2" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="22.009" Height="20" Style="{DynamicResource ButtonStyle_up_down}"  />
+                <Grid Margin="8.533,20.226,12.44,18.685">
+                    <Image HorizontalAlignment="Center" Height="17.626" VerticalAlignment="Center" Width="17.423"  Source="other image/user_96px.png"/>
+                </Grid>
             </Grid>
 
 
@@ -189,14 +192,14 @@
                     <ColumnDefinition Width="87*"/>
                     <ColumnDefinition Width="202*"/>
                 </Grid.ColumnDefinitions>
-                <Button Content="Button" Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="40.334" Style="{DynamicResource ButtonStyle_admin_1}"  Height="20" Margin="13.331,18.206,13.33,18.205"  />
-                <Button Content="Button" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="53.133" Style="{DynamicResource ButtonStyle_RECORDS_2}"  Height="20" Margin="7.931,18.206,7.931,18.205"   />
-                <Button Content="Button" Grid.Column="2" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="61.994" Style="{DynamicResource ButtonStyle_INTERECT_3}" Height="20" Margin="10,18.206,10,18.205"  />
-                <Button Content="Button" Grid.Column="3" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="66.994" Style="{DynamicResource ButtonStyle_CALENDAR_4}"  Height="20" Margin="10,18.206,10,18.205" />
-                <Button Content="Button" Grid.Column="4" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="66.993" Style="{DynamicResource ButtonStyle_PROVIDERS_5}" Margin="10,18.206,10,18.205" Height="20" />
-                <Button Content="Button" Grid.Column="5" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="55.267" Style="{DynamicResource ButtonStyle_SETTINGS_6}" Margin="10,18.206,136.718,18.205" Height="20" />
+                <Button Content="Button" Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="40.334" Style="{DynamicResource ButtonStyle_admin_1}"  Height="20"  />
+                <Button Content="Button" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="53.133" Style="{DynamicResource ButtonStyle_RECORDS_2}"  Height="20"    />
+                <Button Content="Button" Grid.Column="2" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="61.994" Style="{DynamicResource ButtonStyle_INTERECT_3}" Height="20"   />
+                <Button Content="Button" Grid.Column="3" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="66.994" Style="{DynamicResource ButtonStyle_CALENDAR_4}"  Height="20"  />
+                <Button Content="Button" Grid.Column="4" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="66.993" Style="{DynamicResource ButtonStyle_PROVIDERS_5}"  Height="20" />
+                <Button Content="Button" Grid.Column="5" HorizontalAlignment="Left"  VerticalAlignment="Center" Width="55.267" Style="{DynamicResource ButtonStyle_SETTINGS_6}"  Height="20"  />
 
-                <Separator  Grid.Column="5" RenderTransformOrigin="0.5,0.5"   HorizontalAlignment="Right" Width="29" Height="20" VerticalAlignment="Center" Margin="0,18.205,-14.333,18.206" >
+                <Separator  Grid.Column="5" RenderTransformOrigin="0.5,0.5"   HorizontalAlignment="Right" Width="29" Height="20" VerticalAlignment="Center"  >
                     <Separator.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -206,7 +209,7 @@
                         </TransformGroup>
                     </Separator.RenderTransform>
                 </Separator>
-                <Separator HorizontalAlignment="Left" Grid.Column="0" Width="29" Height="20"  VerticalAlignment="Center"  RenderTransformOrigin="0.5,0.5" Margin="-15,18.206,0,18.205">
+                <Separator HorizontalAlignment="Left" Grid.Column="0" Grid.Row="0" Width="29" Height="5.6"  VerticalAlignment="Center"  RenderTransformOrigin="0.5,0.5" Margin="-7.2,25.406,0,25.405" >
                     <Separator.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>

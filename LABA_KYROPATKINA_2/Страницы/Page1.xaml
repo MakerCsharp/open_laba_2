@@ -10,27 +10,6 @@
     <Page.Resources>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <Storyboard x:Key="MouseMove_1">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="separator">
                 <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="65.5"/>
@@ -62,39 +41,7 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="4.669"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
 
     </Page.Resources>
     <Page.Triggers>
@@ -105,6 +52,7 @@
             <BeginStoryboard x:Name="Mouse_Risk_BeginStoryboard" Storyboard="{StaticResource Mouse_Risk}"/>
             <BeginStoryboard x:Name="Mouse_authorization_BeginStoryboard" Storyboard="{StaticResource Mouse_authorization}"/>
             <BeginStoryboard x:Name="Moouse_Vitals_BeginStoryboard" Storyboard="{StaticResource Moouse_Vitals}"/>
+            <BeginStoryboard Storyboard="{StaticResource Storyboard1}"/>
         </EventTrigger>
         <EventTrigger RoutedEvent="UIElement.MouseEnter" SourceName="Tasks">
             <BeginStoryboard x:Name="Mouse_Tasks_BeginStoryboard1" Storyboard="{StaticResource Mouse_Tasks}"/>
@@ -124,12 +72,21 @@
     </Page.Triggers>
 
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="552*"/>
+            <ColumnDefinition Width="34*"/>
+            <ColumnDefinition Width="56*"/>
+            <ColumnDefinition Width="34*"/>
+            <ColumnDefinition Width="69*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="29*"/>
-            <RowDefinition Height="196*"/>
+            <RowDefinition Height="56*"/>
+            <RowDefinition Height="343*"/>
+            <RowDefinition Height="26*"/>
+            <RowDefinition Height="11*"/>
         </Grid.RowDefinitions>
         <!---->
-        <Grid Grid.Row="0">
+        <Grid Grid.Row="0" Grid.ColumnSpan="5">
 
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="607*"/>
@@ -137,9 +94,14 @@
             </Grid.ColumnDefinitions>
             <!-- разметка первой колонки-->
             <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="11*"/>
+                    <RowDefinition Height="17*"/>
+                </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
 
-                    <ColumnDefinition Width="70.4"/>
+                    <ColumnDefinition Width="51.133"/>
+                    <ColumnDefinition Width="19.267"/>
                     <ColumnDefinition Width="71.2"/>
                     <ColumnDefinition/>
 
@@ -148,12 +110,12 @@
 
                 </Grid.ColumnDefinitions>
 
-                <Button Content="Allerts" x:Name="Allerts" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50" Style="{DynamicResource ButtonStyle_Page_2_Alerts}" Height="20" Margin="10,18,10.4,18"   />
-                <Button Content="Tasks" x:Name="Tasks" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="52" Style="{DynamicResource ButtonStyle_Page_1_Tasks}" Height="20" Margin="9.6,18"   />
-                <Button Content="Risk" x:Name="Risk" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="24" Style="{DynamicResource ButtonStyle_Page_1_Risk}" Height="20" Margin="10.4,18"   />
-                <Button Content="Vitals"  x:Name="Vitals" Grid.Column="4" HorizontalAlignment="Left" VerticalAlignment="Center" Width="70" Style="{DynamicResource ButtonStyle_Page_1_Vitals}" Height="20" Margin="10.2,18,0,18"  />
-                <Separator Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="1" Margin="0,48,-253.4,0" VerticalAlignment="Top" Width="745"/>
-                <Separator x:Name="separator" HorizontalAlignment="Left" Height="5" Margin="7,46,0,0" Style="{DynamicResource SimpleSeparator}" VerticalAlignment="Top" Width="42" Background="#FF234A8F" Foreground="#FF234A8F" RenderTransformOrigin="0.5,0.5">
+                <Button Content="Allerts" x:Name="Allerts" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40.067" Style="{DynamicResource ButtonStyle_Page_2_Alerts}" Height="20"  Grid.ColumnSpan="2" Grid.RowSpan="2" MouseEnter="Allerts_MouseEnter"   />
+                <Button Content="Tasks" x:Name="Tasks" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="52" Style="{DynamicResource ButtonStyle_Page_1_Tasks}" Height="20"  Grid.RowSpan="2"    />
+                <Button Content="Risk" x:Name="Risk" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="24" Style="{DynamicResource ButtonStyle_Page_1_Risk}" Height="20" Grid.RowSpan="2"    />
+                <Button Content="Vitals"  x:Name="Vitals" Grid.Column="5" HorizontalAlignment="Left" VerticalAlignment="Center" Width="70" Style="{DynamicResource ButtonStyle_Page_1_Vitals}" Height="20" Margin="0,18.05,0,17.95" Grid.RowSpan="2"   />
+                <Separator Grid.ColumnSpan="6" HorizontalAlignment="Left" Height="1" Margin="0,25.65,-199,0" VerticalAlignment="Top" Width="745" Grid.Row="1"/>
+                <Separator x:Name="separator" HorizontalAlignment="Left" Height="5" Margin="7,23.65,0,0" Style="{DynamicResource SimpleSeparator}" VerticalAlignment="Top" Width="42" Background="#FF234A8F" Foreground="#FF234A8F" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
                     <Separator.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -163,7 +125,8 @@
                         </TransformGroup>
                     </Separator.RenderTransform>
                 </Separator>
-                <Button x:Name="Autrozitio" Content="Button" Grid.Column="3" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="91"  Style="{DynamicResource ButtonStyle_Page_1_Authorization}" Height="20" Margin="9.6,18,9.8,18" />
+                <Button x:Name="Autrozitio" Content="Button" Grid.Column="4" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="91"  Style="{DynamicResource ButtonStyle_Page_1_Authorization}" Height="20"  Grid.RowSpan="2" />
+                <Button x:Name="Push_up" Content="Button" HorizontalAlignment="Left" Margin="0,3.1,0,0" VerticalAlignment="Top" Width="19.4" Grid.ColumnSpan="2" Height="18.227" Grid.Column="1" Style="{DynamicResource ButtonStyle_push}" Loaded="Button_Loaded"/>
 
 
             </Grid>
@@ -183,6 +146,28 @@
 
         </Grid>
 
-        <Frame x:Name="Frame_1" Grid.Row="1" Width="700" Height="320" Background="White" Loaded="Frame_Loaded" Margin="0,0,0,40"/>
+        <Grid Grid.Row="2" Grid.Column="1">
+            <Button Content="" Margin="0,0,10,0" Style="{DynamicResource ButtonStyle_page_1_to4}"/>
+        </Grid>
+
+        <Grid Grid.Row="2" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="17*"/>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="12*"/>
+                <ColumnDefinition Width="17*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Page" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="8" Grid.Row="0" Grid.Column="0"  Height="10.64" Width="17.17" Grid.ColumnSpan="2" />
+            <TextBlock Text="1" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="8"  Grid.Row="0" Height="10.64" Width="5.868"  Grid.Column="1" />
+            <TextBlock Text="of" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8" Grid.Row="0" Grid.Column="2"  Height="10.64" Width="9.615"  />
+            <TextBlock Text="4" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="8" Grid.Row="0" Grid.Column="3" Height="10.64"  Width="4.313"/>
+        </Grid>
+
+        <Grid Grid.Row="2" Grid.Column="3">
+            <Button Content="" Margin="0,0,10,0" Style="{DynamicResource ButtonStyle_Page_1_to_4}"/>
+
+        </Grid>
+
+        <Frame x:Name="Frame_1" Grid.Row="1" Background="White" Loaded="Frame_Loaded" Margin="23,10.2,23,12.8" Grid.ColumnSpan="5"/>
     </Grid>
 </Page>

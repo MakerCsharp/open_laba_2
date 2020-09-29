@@ -110,7 +110,7 @@
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
                         <Button Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"   Width="50" Style="{DynamicResource ButtonStyle_7days}"    />
-                        <Button Grid.Column="2" HorizontalAlignment="Center"  VerticalAlignment="Center"  Content="30 days"  Width="54" Style="{DynamicResource ButtonStyle_30days}" Margin="10,11.5,6,11.5"  />
+                        <Button Grid.Column="2" HorizontalAlignment="Center"  VerticalAlignment="Center"  Content="30 days"  Width="54" Style="{DynamicResource ButtonStyle_30days}"   />
                         <Button Grid.Column="3" HorizontalAlignment="Center"  VerticalAlignment="Center"  Content="90 days"  Width="50" Style="{DynamicResource ButtonStyle_90days}" />
                         <Button Grid.Column="4" HorizontalAlignment="Center"  VerticalAlignment="Center"  Content="All"  Width="50" Style="{DynamicResource ButtonStyle_Alldays}"  />
                         <Button Content="1 day" HorizontalAlignment="Center"  VerticalAlignment="Center"  Width="50" Style="{DynamicResource ButtonStyle_1day}" />

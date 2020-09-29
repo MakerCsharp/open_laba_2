@@ -29,5 +29,15 @@ namespace LABA_KYROPATKINA_2
         {
             Frame_1.Content = new Page2();
         }
+
+        private void Button_Loaded(object sender, RoutedEventArgs e)
+        {
+            Push_up.Visibility = Visibility.Hidden;
+        }
+
+        private void Allerts_MouseEnter(object sender, MouseEventArgs e)
+        {
+            Push_up.Visibility = Visibility.Visible;
+        }
     }
 }
