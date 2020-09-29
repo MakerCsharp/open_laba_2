@@ -38,7 +38,7 @@
                             <ColumnDefinition Width="193*"/>
                         </Grid.ColumnDefinitions>
                         <Rectangle x:Name="rectangle" Fill="#FF005FAF" HorizontalAlignment="Left" Height="49.20" Stroke="#FF0A4670" VerticalAlignment="Top" Width="246.887" Grid.ColumnSpan="3" Margin="0"/>
-                        <Image x:Name="image" Grid.Column="0" HorizontalAlignment="Left" Height="26.62" VerticalAlignment="Top" Width="29.982"  Source="C:\Проекты с githuba\LABA_KYROPATKINA_2\image blue\heart_with_pulse_64px.png" Grid.ColumnSpan="1" Margin="10,10,0,0"/>
+                        <Image x:Name="image" Grid.Column="0" HorizontalAlignment="Left" Height="26.62" VerticalAlignment="Top" Width="29.982"  Source="image blue/heart_with_pulse_64px.png" Grid.ColumnSpan="1" Margin="10,10,0,0"/>
                         <TextBlock Grid.Column="2" HorizontalAlignment="Left" Height="20.12" Margin="0,16,0,0" TextWrapping="Wrap" Text="MONITORING" VerticalAlignment="Top" Width="151.925" Foreground="#FFFFFEFE" FontFamily="Trebuchet MS" FontWeight="Normal" TextDecorations="{x:Null}"/>
                     </Grid>
                     <ControlTemplate.Triggers>
@@ -78,7 +78,7 @@
                         </Grid.ColumnDefinitions>
                         <Rectangle x:Name="rectangle" Fill="#FF005FAF" HorizontalAlignment="Left" Height="49.20" Stroke="#FF0A4670" VerticalAlignment="Top" Width="246.888" Grid.ColumnSpan="3"/>
                         <TextBlock x:Name="textBlock" Grid.Column="2" Height="20.12" Margin="0,16,0,0" TextWrapping="Wrap" Text="REPORTING" VerticalAlignment="Top" Width="Auto" FontFamily="Trebuchet MS" Foreground="White"/>
-                        <Image x:Name="image" HorizontalAlignment="Left" Height="26.62" Margin="10,10,0,0" VerticalAlignment="Top" Width="29.982" Source="C:\Проекты с githuba\LABA_KYROPATKINA_2\image blue\signal_64px.png"/>
+                        <Image x:Name="image" HorizontalAlignment="Left" Height="26.62" Margin="10,10,0,0" VerticalAlignment="Top" Width="29.982" Source="image blue/signal_64px.png"/>
                     </Grid>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsDefaulted" Value="true">
@@ -87,7 +87,7 @@
                             <Setter Property="Foreground" TargetName="textBlock" Value="#FFFFFEFE"/>
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="true">
-                            <Setter Property="Source" TargetName="image" Value="C:\Проекты с githuba\LABA_KYROPATKINA_2\image white\5_signal_64px.png"/>
+                            <Setter Property="Source" TargetName="image" Value="image white\5_signal_64px.png"/>
                             <Setter Property="Fill" TargetName="rectangle" Value="#FF3285CB"/>
                         </Trigger>
                         <Trigger Property="IsPressed" Value="true"/>
@@ -135,6 +135,7 @@
             </Setter.Value>
         </Setter>
     </Style>
+    
     <Style x:Key="ButtonStyle4" TargetType="{x:Type Button}">
         <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
         <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
@@ -154,16 +155,16 @@
                             <ColumnDefinition Width="193*"/>
                         </Grid.ColumnDefinitions>
                         <Rectangle x:Name="rectangle" Fill="#FF005FAF" HorizontalAlignment="Left" Height="49.20" Stroke="#FF0A4670" VerticalAlignment="Top" Width="246.887" Grid.ColumnSpan="3"/>
-                        <Image x:Name="image" HorizontalAlignment="Left" Height="26.62" Margin="10,10,0,0" VerticalAlignment="Top" Width="29.982" Source="C:\Проекты с githuba\LABA_KYROPATKINA_2\image blue\place_marker_64px.png"/>
+                        <Image x:Name="image" HorizontalAlignment="Left" Height="26.62" Margin="10,10,0,0" VerticalAlignment="Top" Width="29.982" Source="image blue\place_marker_64px.png"/>
                         <TextBlock x:Name="textBlock" Grid.Column="2" HorizontalAlignment="Left" Height="20.12"  TextWrapping="Wrap" Text="LOCATIONS" VerticalAlignment="Top" Width="192.912" Foreground="White" FontFamily="Trebuchet MS" Margin="0,16,0,0"/>
                     </Grid>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsDefaulted" Value="true">
                             <Setter Property="Fill" TargetName="rectangle" Value="#FF3285CB"/>
-                            <Setter Property="Source" TargetName="image" Value="C:\Проекты с githuba\LABA_KYROPATKINA_2\image white\4_place_marker_64px.png"/>
+                            <Setter Property="Source" TargetName="image" Value="image white\4_place_marker_64px.png"/>
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="true">
-                            <Setter Property="Source" TargetName="image" Value="C:\Проекты с githuba\LABA_KYROPATKINA_2\image white\4_place_marker_64px.png"/>
+                            <Setter Property="Source" TargetName="image" Value="image white\4_place_marker_64px.png"/>
                             <Setter Property="Fill" TargetName="rectangle" Value="#FF3285CB"/>
                         </Trigger>
                         <Trigger Property="IsPressed" Value="true"/>
