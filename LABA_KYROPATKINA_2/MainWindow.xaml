@@ -19,6 +19,7 @@
             <Setter Property="VerticalContentAlignment" Value="Center"/>
             <Setter Property="Padding" Value="1"/>
         </Style>
+       
 
     </Window.Resources>
     <Window.Triggers>

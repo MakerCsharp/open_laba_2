@@ -41,7 +41,8 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="4.669"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
-        
+       
+
 
     </Page.Resources>
     <Page.Triggers>
@@ -52,7 +53,6 @@
             <BeginStoryboard x:Name="Mouse_Risk_BeginStoryboard" Storyboard="{StaticResource Mouse_Risk}"/>
             <BeginStoryboard x:Name="Mouse_authorization_BeginStoryboard" Storyboard="{StaticResource Mouse_authorization}"/>
             <BeginStoryboard x:Name="Moouse_Vitals_BeginStoryboard" Storyboard="{StaticResource Moouse_Vitals}"/>
-            <BeginStoryboard Storyboard="{StaticResource Storyboard1}"/>
         </EventTrigger>
         <EventTrigger RoutedEvent="UIElement.MouseEnter" SourceName="Tasks">
             <BeginStoryboard x:Name="Mouse_Tasks_BeginStoryboard1" Storyboard="{StaticResource Mouse_Tasks}"/>
@@ -168,6 +168,6 @@
 
         </Grid>
 
-        <Frame x:Name="Frame_1" Grid.Row="1" Background="White" Loaded="Frame_Loaded" Margin="23,10.2,23,12.8" Grid.ColumnSpan="5"/>
+        <Frame x:Name="Frame_1" Grid.Row="1" Background="White" Loaded="Frame_Loaded"  Grid.ColumnSpan="5"  />
     </Grid>
 </Page>

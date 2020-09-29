@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:LABA_KYROPATKINA_2"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="700" 
+      d:DesignHeight="343" d:DesignWidth="746" 
       Title="Page2">
 
     <Grid>
@@ -171,13 +171,83 @@
 
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="27*"/>
-                <ColumnDefinition Width="673*"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-            <DataGrid Margin="10" Grid.ColumnSpan="2">
+            
+            
+            <Grid Grid.Column="0">
+                <ListView  HorizontalAlignment="Left" Height="166" VerticalAlignment="Top" Width="115">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </Grid>
 
-            </DataGrid>
+            <Grid Grid.Column="1">
+                <ListView  HorizontalAlignment="Left" Height="166" VerticalAlignment="Top" Width="115">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+
+            </Grid>
+
+            <Grid Grid.Column="2">
+                <ListView  HorizontalAlignment="Left" Height="166" VerticalAlignment="Top" Width="115">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+
+            </Grid>
+
+            <Grid Grid.Column="3">
+                <ListView  HorizontalAlignment="Left" Height="166" VerticalAlignment="Top" Width="115">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+
+            </Grid>
+
+            <Grid Grid.Column="4">
+                <ListView  HorizontalAlignment="Left" Height="166" VerticalAlignment="Top" Width="115">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </Grid>
+
+            <Grid Grid.Column="5">
+                <ListView  HorizontalAlignment="Left" Height="166" VerticalAlignment="Top" Width="115">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+
+            </Grid>
+            
+
+
+
         </Grid>
 
     </Grid>
