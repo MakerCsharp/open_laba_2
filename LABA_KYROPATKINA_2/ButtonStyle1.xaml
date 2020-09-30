@@ -986,7 +986,7 @@
                 <ControlTemplate TargetType="{x:Type ListView}">
                     <Grid HorizontalAlignment="Left" Height="166" VerticalAlignment="Top" Width="115">
                         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="166" Stroke="White" VerticalAlignment="Top" RadiusX="0" RadiusY="0" Width="115"/>
-                        <ListView HorizontalAlignment="Left" Height="166" VerticalAlignment="Top" Width="115" Margin="0" BorderBrush="White" Foreground="White">
+                        <ListView HorizontalAlignment="Left" Height="166" VerticalAlignment="Top" Width="95" Margin="10,0,0,0" BorderBrush="White" Foreground="White">
                             <ListView.View>
                                 <GridView>
                                     <GridViewColumn/>
