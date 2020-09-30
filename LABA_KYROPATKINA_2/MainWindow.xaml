@@ -35,7 +35,7 @@
             <RowDefinition Height="31*"/>
         </Grid.RowDefinitions>
 
-        <Frame  x:Name="MainWindow_1"  Grid.Row="1"  Height="436" VerticalAlignment="Top" Grid.Column="1" HorizontalAlignment="Right" Width="744" Loaded="MainWindow_Loaded" Margin="0,0,0,-0.229"   />
+        <Frame  x:Name="MainWindow_1"  Grid.Row="1"  Height="436" VerticalAlignment="Top" Grid.Column="1" HorizontalAlignment="Right" Width="746" Loaded="MainWindow_Loaded" Margin="0,0,0,-0.229"   />
 
         <Grid Grid.Row="0" Grid.Column="0">
             <Grid.ColumnDefinitions>

@@ -41,7 +41,7 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="4.669"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
-       
+
 
 
     </Page.Resources>
@@ -73,11 +73,13 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="552*"/>
+            <ColumnDefinition Width="33*"/>
+            <ColumnDefinition Width="520*"/>
             <ColumnDefinition Width="34*"/>
             <ColumnDefinition Width="56*"/>
             <ColumnDefinition Width="34*"/>
-            <ColumnDefinition Width="69*"/>
+            <ColumnDefinition Width="21*"/>
+            <ColumnDefinition Width="48*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="56*"/>
@@ -86,7 +88,7 @@
             <RowDefinition Height="11*"/>
         </Grid.RowDefinitions>
         <!---->
-        <Grid Grid.Row="0" Grid.ColumnSpan="5">
+        <Grid Grid.Row="0" Grid.ColumnSpan="7">
 
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="607*"/>
@@ -146,11 +148,11 @@
 
         </Grid>
 
-        <Grid Grid.Row="2" Grid.Column="1">
+        <Grid Grid.Row="2" Grid.Column="2">
             <Button Content="" Margin="0,0,10,0" Style="{DynamicResource ButtonStyle_page_1_to4}"/>
         </Grid>
 
-        <Grid Grid.Row="2" Grid.Column="2">
+        <Grid Grid.Row="2" Grid.Column="3">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="17*"/>
                 <ColumnDefinition Width="10*"/>
@@ -163,11 +165,11 @@
             <TextBlock Text="4" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="8" Grid.Row="0" Grid.Column="3" Height="10.64"  Width="4.313"/>
         </Grid>
 
-        <Grid Grid.Row="2" Grid.Column="3">
+        <Grid Grid.Row="2" Grid.Column="4">
             <Button Content="" Margin="0,0,10,0" Style="{DynamicResource ButtonStyle_Page_1_to_4}"/>
 
         </Grid>
 
-        <Frame x:Name="Frame_1" Grid.Row="1" Background="White" Loaded="Frame_Loaded"  Grid.ColumnSpan="5"  />
+        <Frame x:Name="Frame_1" Grid.Row="1" Background="White" Loaded="Frame_Loaded"  Grid.ColumnSpan="7"   Height="343"   Width="664"  HorizontalAlignment="Center"  VerticalAlignment="Center"/>
     </Grid>
 </Page>
