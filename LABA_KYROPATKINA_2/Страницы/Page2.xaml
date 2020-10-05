@@ -185,7 +185,7 @@
 
                         <GridViewColumn Header="Логин" Width="150" DisplayMemberBinding="{Binding Login}"/>
 
-                        <GridViewColumn Header="Роль" Width="150" DisplayMemberBinding="{Binding IdRole}"/>
+                        <GridViewColumn Header="Роль" Width="150" DisplayMemberBinding="{Binding Role.Role1}"/>
 
                     </GridView>
                 </ListView.View>
